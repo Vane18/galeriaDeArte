@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f3f3;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+            margin-bottom: 40px;
+        }
+
+        /* Primera galería de 3x3 */
+        .gallery.first {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .gallery.first img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+    .wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    }
+
+    .wrapper > div {
+    border-radius: 5px;
+    padding: 1em;
+    color: #d9480f;
+    }
+
+    .wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    }
+    .one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    }
+    .two {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    }
+    .three {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    }
+    .four {
+    grid-column: 4 / 6;
+    grid-row: 1 / 3;
+    }
+    .five {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    }
+
+    .one img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .two img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .three img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .four img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .five img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .uno img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+    </style>
+</head>
+<body>
+
+<h1>Galería de Arte</h1>
+<div class="gallery first">
+    <div class="uno"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqiIkKbxZQraojZMLLpNGoUqlNcw9tgDpgwQ&s" alt="Obra 1"></div>
+    <div class="dos"><img src="https://content3.cdnprado.net/imagenes/Documentos/imgsem/90/907d/907d2c98-eb35-4f1b-a39d-65bff0322faa/6b7816af-195c-4ef8-85ea-008f607a2c8e_832.jpg" alt="Obra 2"></div>
+    <div class="tres"><img src="https://i.pinimg.com/736x/32/99/7c/32997c30ed27e216a4111c2e1129c833.jpg" alt="Obra 3"></div>
+    <div class="cuatro"><img src="https://www.meisterdrucke.es/kunstwerke/kunstler_thumbs/Mih%C3%A1ly-Munk%C3%A1csy.jpg" alt="Obra 4"></div>
+    <div class="cinco"><img src="https://i.etsystatic.com/15032176/r/il/05c26c/2385533792/il_570xN.2385533792_5tp8.jpg" alt="Obra 5"></div>
+    <div class="seis"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn98B1KjuAyR65PKOKcfZNU4Em2Llu1xyCEyV5RvrsIswKnTXSvyeljVxQmHCFfoYYQU4&usqp=CAU" alt="Obra 6"></div>
+    <div class="siete"><img src="https://i.etsystatic.com/22650084/c/1240/1240/0/0/il/aa71d1/5790302626/il_300x300.5790302626_drmx.jpg" alt="Obra 7"></div>
+    <div class="ocho"><img src="https://pbs.twimg.com/media/EyFsoM4XMAMuPcI.jpg" alt="Obra 8"></div>
+    <div class="nueve"><img src="https://m.media-amazon.com/images/I/41EBD+HWxgL._AC_UF894,1000_QL80_.jpg" alt="Obra 9"></div>
+
+</div>
+
+<div class="wrapper">
+    <div class="one"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK1egjtjvZ1LLmo5j7DapfZ6TjCic2CpB4aQ&s" alt="Obra 1"></div>
+    <div class="two"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtHpUVUSuUGvRVulSHtJofCd31QWOnQnPMw&s" alt="Obra 2"></div>
+    <div class="three"><img src="https://i0.wp.com/arteyalgomas.com/wp-content/uploads/2020/01/Van_Gogh.-Campo-de-trigo-con-cuervos.-1890.jpg?resize=1140%2C713&ssl=1" alt="Obra 3"></div>
+    <div class="four"><img src="https://vanguardia.com.mx/binrepository/436x648/0c0/0d0/down-right/11604/KKUF/leonardo-da-vinci-mona-lisa-louvr_1-10339115_20241104185529.jpg" alt="Obra 4"></div>
+    <div class="five"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWCKzWvN1uNMkgIO-xlTU_KezEVqE62kEmw&s" alt="Obra 5"></div>
+</div>
+
+</body>
+</html>
